@@ -12,7 +12,7 @@ const changelog = await getDefaultChangelog(
 );
 */
 return new Response(
-    'OK',
+    JSON.stringify(req, null, 2),
     {
       status: 200,
       headers: {
