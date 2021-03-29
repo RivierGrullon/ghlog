@@ -1,18 +1,18 @@
-import { getDefaultChangelog } from "./mod.ts";
+// import { getDefaultChangelog } from "./mod.ts";
 
 async function handleRequest(req) {
 
 console.log(req)
-
-const { repo, base, head, name, tag, date } = req.query
+/*
+const [ repo, head ] = req.url.split('/')
 
 const changelog = await getDefaultChangelog(
   { name: repo, base, head },
   { name, tag, date },
 );
-
+*/
 return new Response(
-    changelog,
+    'OK',
     {
       status: 200,
       headers: {
